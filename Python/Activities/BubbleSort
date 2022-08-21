@@ -1,0 +1,8 @@
+myList = [2,1,4,3,6,5]
+for i in range(len(myList)-1):
+    for j in range(0,len(myList)-i-1):
+        if myList[j] > myList[j+1]:
+            temp = myList[j]
+            myList[j] = myList[j+1]
+            myList[j+1] = temp
+print(myList)

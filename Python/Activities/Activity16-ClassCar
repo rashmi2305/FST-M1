@@ -1,0 +1,13 @@
+class Car:
+    'Information about Car'
+    def __init__(self):
+        self.manufacturer = "Audi"
+        self.model = "A3"
+        self.make = 2009
+        self.transmission = 300
+        self.color = "grey"
+    def accelerate(self):
+        print(self.manufacturer + " " + self.model +" is moving")
+
+car1 = Car()
+car1.accelerate()

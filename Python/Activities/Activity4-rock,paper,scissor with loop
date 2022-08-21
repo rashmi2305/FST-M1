@@ -1,0 +1,28 @@
+strInput = input("Do you want ot play rock paper scissor(y/n): ")
+while strInput.upper() == "Y": 
+    strPlayer1 = input("Enter player1 name: ")
+    strPlayer2 = input("Enter player2 name: ")
+    strChoice1 = input("Enter Choice1(rock/paper/scissor): ")
+    strChoice2 = input("Enter Choice2(rock/paper/scissor): ")
+    if strChoice1 == strChoice2:
+        print("Choices same")
+    elif strChoice1.upper() == 'ROCK': 
+        if strChoice2.upper() == 'PAPER': 
+            print("Player "+strPlayer2+ " wins")
+        if strChoice2.upper() == 'SCISSOR': 
+            print("Player "+strPlayer1+ " wins")
+    elif strChoice1.upper() == 'PAPER':
+        if strChoice2.upper() == 'SCISSOR': 
+            print("Player "+strPlayer2+ " wins")
+        if strChoice2.upper() == 'ROCK': 
+            print("Player "+strPlayer1+ " wins")
+    elif strChoice1.upper() == 'SCISSOR':
+        if strChoice2.upper() == 'ROCK': 
+            print("Player "+strPlayer2+ " wins")   
+        if strChoice2.upper() == 'PAPER': 
+            print("Player "+strPlayer1+ " wins")	
+    else:
+        print("Invalid input! You have not entered rock, paper or scissors, try again.")
+    strInput = input("Do you want ot play rock paper scissor(y/n): ")
+    if strInput.upper() == "N":
+        break 

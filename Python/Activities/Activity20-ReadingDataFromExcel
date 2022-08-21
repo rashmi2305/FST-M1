@@ -1,0 +1,6 @@
+import pandas 
+dataframe = pandas.read_excel('PersonalInfo.xlsx')
+print(dataframe)
+print("No fo rows and columns: ", dataframe.shape)  #O/P in form of row,column
+print(dataframe['Email'])
+print(dataframe.sort_values('FirstName'))

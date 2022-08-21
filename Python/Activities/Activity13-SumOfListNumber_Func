@@ -1,0 +1,8 @@
+list1 = list(input("Enter a sequence of comma separated values: ").split(", "))
+def listSum(list1):
+    intSum = 0
+    for number in list1:
+        intSum += number
+    return(intSum)
+
+print(listSum(list1))

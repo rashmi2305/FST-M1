@@ -1,0 +1,4 @@
+#myDict = dict(Apple=20.0,Mango = 60.66,Pear=50.5, banana=11)    //Constructor 
+myDict = {"Apple":20.0, "Mango":60.66, "Pear":50.5,"Banana":11 }
+if "Apple" in myDict:
+    print("True")

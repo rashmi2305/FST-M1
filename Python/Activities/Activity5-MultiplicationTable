@@ -1,0 +1,5 @@
+intNum = input("Enter a number")
+print("Generating table for: "+intNum)
+
+for i in range(1,11):
+    print(int(intNum)*i)

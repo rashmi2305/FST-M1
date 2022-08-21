@@ -1,0 +1,10 @@
+myList = list(input("Enter comma seperated list: ").split(","))
+listEven = []
+listOdd = []
+for item in myList:
+    if int(int(item)%2) == 0:
+        listEven.append(item)
+    else:
+        listOdd.append(item)
+print(listEven)
+print(listOdd)

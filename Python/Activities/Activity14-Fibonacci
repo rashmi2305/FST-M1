@@ -1,0 +1,10 @@
+#intNum = input("Enter Number: ")
+intNum = 10
+def Fib(intSum):
+    if intSum <= 1:
+        return intSum
+    else:
+        return(Fib(intSum-1) + Fib(intSum-2))
+
+for i in range(intNum):
+    print(Fib(i))

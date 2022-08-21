@@ -1,0 +1,8 @@
+import pandas as pd 
+dataframe = pd.read_csv('sample.csv')
+
+print(dataframe)
+print(dataframe["Username"])        #To print all values from col
+print(dataframe["Username"][1])     #To print a particular value from a column
+print(dataframe.sort_values("Username"))
+print(dataframe.sort_values("Password", ascending=False))

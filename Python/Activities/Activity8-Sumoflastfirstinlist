@@ -1,0 +1,6 @@
+myList = list(input("Enter comma seperated list: ").split(","))
+if myList[0] == myList[-1]:
+    print("First and last element are same")
+else:
+    print("First and last element are not same")
+    

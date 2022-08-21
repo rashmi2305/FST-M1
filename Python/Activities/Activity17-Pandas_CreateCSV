@@ -1,0 +1,7 @@
+import pandas 
+data = {
+    "Username": ["admin","Charles","Deku"],
+    "Password": ["password","Charl13","AllMight"]
+}
+dataframe = pandas.DataFrame(data)
+dataframe.to_csv("sample.csv", index=False)     #If csv file already exists, contents wil lbe edited 
